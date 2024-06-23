@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <form method="GET"  style  = "width: 40%; margin:30px" >
+    <h3>Add Dish in Your List</h3>
+  <div class="form-group">
+    <input type="text" name="Dish Name" class="form-control" placeholder="Dish Name"><br>
+    <input type="text" name="ingredients" class="form-control" placeholder="Ingredients"><br>
+    <input type="text" name="rate" class="form-control" placeholder="My Rating"><br>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+    {% with messages = get_flashed_messages() %}
+        {% for msg in messages %}
+         <p>{{ msg }}</p>
+        {% endfor %}
+    {% endwith%}
+{% endblock %}

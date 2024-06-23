@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Your Dishes:</h1>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Ingredients</th>
+      <th scope="col">Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Khinkali</td>
+      <td>meat, flour, water, spices</td>
+      <td>10/10</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Tolma</td>
+      <td>meat, cabbage, rice, spices</td>
+      <td>8/10</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
+
+
+{% block title %}
+    <title>Dishes</title>
+{% endblock %}
